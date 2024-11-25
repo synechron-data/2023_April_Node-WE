@@ -1,0 +1,14 @@
+{
+  "name": "folder-watcher",
+  "version": "1.0.0",
+  "description": "Using third-party packages from npm",
+  "main": "app.js",
+  "author": "Manish Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

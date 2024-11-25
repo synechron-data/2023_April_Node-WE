@@ -1,0 +1,32 @@
+extend layout
+
+block pagecontent
+    ul.list-group 
+        li.list-group-item 
+            a(href="/") Home 
+
+    //- ul.list-group 
+    //-     each emp in empList
+    //-         li.list-group-item= emp.name 
+    //-             span.badge= emp.id 
+
+    //- Create a table tag to diplay empList (Say Done After you Complete)
+    table.table.table-hover.table-striped 
+        thead 
+            tr 
+                th ID
+                th NAME 
+                th
+                th ACTIONS 
+                th 
+        tbody 
+            each emp in empList
+                tr 
+                    td= emp.id 
+                    td= emp.name 
+                    td 
+                        a.text-info(href="#") Details
+                    td 
+                        a.text-warning(href="#") Edit
+                    td 
+                        a.text-danger(href="#") Delete
